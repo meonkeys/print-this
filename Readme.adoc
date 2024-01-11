@@ -5,6 +5,8 @@ Generate a book with Asciidoctor.
 Typesetting for print-on-demand printing is complex!
 Use this as a starting point for your own print book.
 
+The output is a print-ready PDF.
+
 == Usage
 
 [source,bash]
