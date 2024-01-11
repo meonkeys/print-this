@@ -1,0 +1,10 @@
+# smart quotes (and many other special characters) require
+# "-with-font-fallbacks" here
+extends: default-for-print-with-font-fallbacks
+page:
+  size: A5
+codespan:
+  font-color: #c70d0d
+link:
+  font-family: M+ 1mn
+  font-color: #0b04d5

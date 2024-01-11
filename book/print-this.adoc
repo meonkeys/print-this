@@ -1,0 +1,302 @@
+= Print This: Asciidoctor Quick Start
+Adam Monsen
+:doctype: book
+:docinfo:
+:toc:
+:toclevels: 3
+:pagenums:
+:sectnums:
+:icons: font
+:xrefstyle: full
+:hide-uri-scheme:
+:source-highlighter: pygments
+:pygments-linenums-mode: inline
+:!chapter-signifier:
+:!webfonts:
+:pdf-theme: print-theme.yml
+
+:media: prepress
+
+// License for book text: CC0 1.0 (Creative Commons CC0 1.0 Universal)
+
+[colophon]
+== Colophon
+
+The Print This Press, Ceres and Seattle.
+
+(C)2049 by The Print This Press
+
+Published in the Milky Way Galaxy.
+
+This book is designed by Dagger Flush, Denver, Colorado.
+The types are handset Volcano Dust and Papaya, designed by Leeloo.
+Leeloo created the typefaces to soften the bluntness of documentation.
+
+Built with Asciidoctor on Linux.
+
+Printing and binding by Ceres Lithographing, Inc., Ceres, Milky Way.
+
+== Introduction
+
+(((welcome)))
+Welcome to _Print This_!
+And--before you ask--yes, you should!
+
+== Version
+
+This book was generated
+
+* on `{build_date_time}`
+* from git commit `{build_git_commit}`
+* using `{build_os_release}`
+
+== Various asciidoc examples
+
+Find more at https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/.
+
+=== Some prose
+
+Here's some prose.
+
+Now hear this.
+(((lorem, generated)))
+Let the lorem ipsum begin.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+That's the last of it.
+But there might be some more later.
+
+Note how we use one sentence per line.
+Read more about this at https://asciidoctor.org/docs/asciidoc-recommended-practices/.
+
+=== Bullet list
+
+Here's a bullet list.
+
+* foo
+** sub-foo
+* bar
+* baz
+
+=== Numbered list
+
+Here's a numbered list.
+
+. foo
+.. sub-foo
+. bar
+. baz
+
+=== A table
+
+Here's a table.
+
+|===
+|ID |Description |Status |Resolution Details
+
+|ad01 |add usage info |OPEN |tbd
+|ad02 |translate to any language besides English |OPEN |tbd
+|ad03 |support Lulu |OPEN |tbd
+|ad04 |support another printer/publisher besides Lulu | OPEN |tbd
+|===
+
+=== Special characters
+
+Here's a tent: ⛺
+
+Here's a bento box: 🍱
+
+Here's a foggy city: 🌁
+
+Here's a barber pole: 💈
+
+Here's some text with emoji in the middle of a long paragraph.
+Lorem ipsum dolor sit 👔 (necktie) 🧞 (genie) amet, consetetur sadipscing elitr, sed diam.
+Nonumy eirmod tempor invidunt ut labore et 💫 (dizzy) dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+Here's some more filler text for no reason.
+At vero eos et accusam et justo duo dolores et ea rebum.
+Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+=== Source code
+
+==== YAML
+
+(((yaml)))
+Here is some annotated YAML source code.
+
+[source,yaml]
+----
+# snippet from foo/bar.yml
+services:
+  reverse-proxy:
+    websecure.port: 443 <1>
+
+# skipping ahead...
+services:
+  app:
+    labels:
+      - foo.port=websecure <2>
+      - foo.match=Host(cloud.example.com) <3>
+----
+
+<1> Set port for `websecure` on the `reverse-proxy` service: accept traffic over port 443.
+
+<2> Connect `foo` with `websecure` on the `app` service.
+
+<3> Route traffic for `cloud.example.com` to `foo`.
+
+=== A quote
+
+____
+The future is already here--it's just not evenly distributed.
+____
+
+William Gibson.
+
+=== Admonitions
+
+NOTE: Some additional info...
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+
+== Long chapter
+
+Here's a chapter with a lot of text.
+This may be useful for counting full pages of prose.
+Word counts per paragraph below:
+
+|===
+|Paragraph |Word count
+
+|1 |153
+|2 |117
+|3 |139
+|4 |141
+|5 |133
+|===
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut tellus elementum sagittis vitae et leo duis ut diam.
+Pellentesque adipiscing commodo elit at imperdiet dui.
+Duis at consectetur lorem donec massa sapien faucibus et molestie.
+At imperdiet dui accumsan sit amet nulla.
+Tortor aliquam nulla facilisi cras fermentum odio eu.
+Morbi tristique senectus et netus et malesuada fames.
+Auctor neque vitae tempus quam pellentesque nec nam aliquam.
+Enim neque volutpat ac tincidunt vitae semper quis.
+Non consectetur a erat nam.
+Adipiscing at in tellus integer feugiat scelerisque varius.
+Purus ut faucibus pulvinar elementum integer enim neque.
+Eu lobortis elementum nibh tellus molestie.
+Mi sit amet mauris commodo quis imperdiet massa tincidunt.
+Aliquam faucibus purus in massa tempor nec.
+Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus.
+Nulla at volutpat diam ut venenatis tellus in metus vulputate.
+Neque ornare aenean euismod elementum.
+
+Egestas integer eget aliquet nibh praesent tristique magna sit amet.
+Cras sed felis eget velit aliquet sagittis.
+Mi quis hendrerit dolor magna eget est lorem.
+Felis imperdiet proin fermentum leo vel orci porta non.
+Elementum tempus egestas sed sed risus pretium quam vulputate dignissim.
+Augue eget arcu dictum varius duis at.
+Commodo ullamcorper a lacus vestibulum sed.
+Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan.
+Viverra suspendisse potenti nullam ac tortor vitae.
+Massa enim nec dui nunc mattis.
+Venenatis cras sed felis eget velit aliquet.
+Odio morbi quis commodo odio aenean sed adipiscing diam donec.
+Urna nec tincidunt praesent semper.
+Ultrices tincidunt arcu non sodales neque sodales.
+Sit amet commodo nulla facilisi nullam vehicula ipsum.
+
+Tempus quam pellentesque nec nam.
+Nibh cras pulvinar mattis nunc sed.
+At lectus urna duis convallis convallis tellus.
+Eleifend mi in nulla posuere.
+Vulputate ut pharetra sit amet aliquam id.
+Malesuada pellentesque elit eget gravida.
+Lacus viverra vitae congue eu consequat.
+Velit ut tortor pretium viverra suspendisse potenti nullam ac.
+Elit scelerisque mauris pellentesque pulvinar pellentesque.
+Arcu dui vivamus arcu felis bibendum.
+Sem nulla pharetra diam sit amet nisl suscipit adipiscing.
+Mauris vitae ultricies leo integer malesuada nunc.
+In aliquam sem fringilla ut morbi tincidunt augue.
+Lacus laoreet non curabitur gravida arcu ac.
+Orci a scelerisque purus semper.
+Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit.
+Bibendum enim facilisis gravida neque.
+Vestibulum lectus mauris ultrices eros in cursus turpis.
+Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus.
+Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt.
+
+Nisl purus in mollis nunc.
+Eget nunc scelerisque viverra mauris in aliquam sem.
+Laoreet id donec ultrices tincidunt arcu non sodales neque sodales.
+Dui nunc mattis enim ut tellus elementum.
+Et netus et malesuada fames ac turpis egestas sed.
+Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque.
+Est pellentesque elit ullamcorper dignissim cras tincidunt.
+Neque volutpat ac tincidunt vitae semper quis lectus nulla.
+Suspendisse ultrices gravida dictum fusce ut placerat.
+Tincidunt lobortis feugiat vivamus at augue eget arcu.
+Dui ut ornare lectus sit amet est placerat.
+Tortor aliquam nulla facilisi cras fermentum odio eu.
+Orci eu lobortis elementum nibh tellus molestie nunc non.
+Sit amet aliquam id diam maecenas.
+Pellentesque habitant morbi tristique senectus et.
+Felis eget nunc lobortis mattis aliquam faucibus purus in massa.
+Nullam eget felis eget nunc lobortis mattis aliquam faucibus.
+Nec sagittis aliquam malesuada bibendum arcu.
+
+Sodales neque sodales ut etiam sit amet.
+Purus faucibus ornare suspendisse sed nisi lacus.
+A iaculis at erat pellentesque adipiscing.
+Ac odio tempor orci dapibus.
+Habitant morbi tristique senectus et.
+Amet porttitor eget dolor morbi non arcu.
+Cras tincidunt lobortis feugiat vivamus.
+Mauris nunc congue nisi vitae suscipit tellus mauris a.
+Montes nascetur ridiculus mus mauris vitae ultricies leo.
+Sodales ut eu sem integer vitae justo eget magna.
+Tristique risus nec feugiat in fermentum posuere.
+Pharetra magna ac placerat vestibulum lectus mauris ultrices eros.
+Mauris pellentesque pulvinar pellentesque habitant morbi tristique.
+Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in.
+Urna molestie at elementum eu facilisis sed.
+A condimentum vitae sapien pellentesque habitant morbi tristique senectus et.
+Augue interdum velit euismod in pellentesque.
+Diam donec adipiscing tristique risus nec feugiat in fermentum.
+
+== References
+
+Please refer to <<Various asciidoc examples>>.
+
+== Glossary
+
+foo::
+  A short, meaningless word often used in throw-away code.
+bar::
+  Companion to foo.
+baz::
+  Companion to bar.
+
+== End
+
+The End.
+
+[index]
+== Index
