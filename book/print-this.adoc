@@ -53,7 +53,7 @@ This book was generated
 * from git commit `{build_git_commit}`
 * using `{build_os_release}`
 
-== Various Asciidoc examples
+== Asciidoc examples
 
 (((Asciidoc)))
 Find more at https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/.
@@ -188,9 +188,9 @@ CAUTION: Ensure that...
 
 === References
 
-Refer to <<Various asciidoc examples>>.
+Refer to <<Asciidoc examples>>.
 
-https://example.comlink:[This text is hyperlinked to example.com]
+https://example.com[This text is hyperlinked].
 
 == Long chapter
 
