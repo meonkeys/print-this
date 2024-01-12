@@ -14,7 +14,9 @@ Adam Monsen
 :!chapter-signifier:
 :!webfonts:
 :pdf-theme: print-theme.yml
-
+// necessary for keyboard macro (kbd)
+:experimental:
+// optimize for printing
 :media: prepress
 
 // License for book text: CC0 1.0 (Creative Commons CC0 1.0 Universal)
@@ -44,22 +46,25 @@ And--before you ask--yes, you should!
 
 == Version
 
+(((version)))
 This book was generated
 
 * on `{build_date_time}`
 * from git commit `{build_git_commit}`
 * using `{build_os_release}`
 
-== Various asciidoc examples
+== Various Asciidoc examples
 
+(((Asciidoc)))
 Find more at https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/.
 
 === Some prose
 
+(((Asciidoc, prose)))
 Here's some prose.
 
 Now hear this.
-(((lorem, generated)))
+(((lorem ipsum)))
 Let the lorem ipsum begin.
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -74,6 +79,7 @@ Read more about this at https://asciidoctor.org/docs/asciidoc-recommended-practi
 
 === Bullet list
 
+(((Asciidoc, bullet list)))
 Here's a bullet list.
 
 * foo
@@ -83,6 +89,7 @@ Here's a bullet list.
 
 === Numbered list
 
+(((Asciidoc, numbered list)))
 Here's a numbered list.
 
 . foo
@@ -92,6 +99,7 @@ Here's a numbered list.
 
 === A table
 
+(((Asciidoc, table)))
 Here's a table.
 
 |===
@@ -103,6 +111,11 @@ Here's a table.
 |ad04 |support another printer/publisher besides Lulu | OPEN |tbd
 |===
 
+=== Keyboard keys
+
+(((Asciidoc, keyboard macro)))
+Increase zoom level with kbd:[Ctrl + +].
+
 === Special characters
 
 Here's a tent: ⛺
@@ -113,7 +126,8 @@ Here's a foggy city: 🌁
 
 Here's a barber pole: 💈
 
-Here's some text with emoji in the middle of a long paragraph.
+(((Asciidoc, smart quotes)))
+Here's some text with “smart quotes” and emoji in the middle of a long paragraph.
 Lorem ipsum dolor sit 👔 (necktie) 🧞 (genie) amet, consetetur sadipscing elitr, sed diam.
 Nonumy eirmod tempor invidunt ut labore et 💫 (dizzy) dolore magna aliquyam erat, sed diam voluptua.
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -127,6 +141,7 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 
 ==== YAML
 
+(((Asciidoc, source code block)))
 (((yaml)))
 Here is some annotated YAML source code.
 
@@ -145,7 +160,7 @@ services:
       - foo.match=Host(cloud.example.com) <3>
 ----
 
-<1> Set port for `websecure` on the `reverse-proxy` service: accept traffic over port 443.
+<1> Tell `websecure` on the `reverse-proxy` service to accept traffic over port 443.
 
 <2> Connect `foo` with `websecure` on the `app` service.
 
@@ -175,9 +190,12 @@ CAUTION: Ensure that...
 
 Refer to <<Various asciidoc examples>>.
 
+https://example.comlink:[This text is hyperlinked to example.com]
+
 == Long chapter
 
-Here's a chapter with a lot of text: five long paragraphs.
+(((Asciidoc, prose)))
+Here's a chapter with a lot of text.
 This may be useful for counting full pages of prose.
 I counted each using `wc`, excluding the paragraph number at the beginning of each.
 Word counts per paragraph:
