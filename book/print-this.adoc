@@ -189,7 +189,6 @@ Word counts per paragraph:
 |2 |117
 |3 |139
 |4 |141
-|5 |130
 |===
 
 1.
@@ -270,26 +269,6 @@ Pellentesque habitant morbi tristique senectus et.
 Felis eget nunc lobortis mattis aliquam faucibus purus in massa.
 Nullam eget felis eget nunc lobortis mattis aliquam faucibus.
 Nec sagittis aliquam malesuada bibendum arcu.
-
-5.
-Sodales neque sodales ut etiam sit amet.
-Purus faucibus ornare suspendisse sed nisi lacus.
-A iaculis at erat pellentesque adipiscing.
-Ac odio tempor orci dapibus.
-Habitant morbi tristique senectus et.
-Amet porttitor eget dolor morbi non arcu.
-Cras tincidunt lobortis feugiat vivamus.
-Mauris nunc congue nisi vitae suscipit tellus mauris a.
-Montes nascetur ridiculus mus mauris vitae ultricies leo.
-Sodales ut eu sem integer vitae justo eget magna.
-Tristique risus nec feugiat in fermentum posuere.
-Pharetra magna ac placerat vestibulum lectus mauris ultrices eros.
-Mauris pellentesque pulvinar pellentesque habitant morbi tristique.
-Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in.
-Urna molestie at elementum eu facilisis sed.
-A condimentum vitae sapien pellentesque habitant morbi tristique senectus et.
-Augue interdum velit euismod in pellentesque.
-Diam donec adipiscing tristique risus nec.
 
 == Glossary
 
