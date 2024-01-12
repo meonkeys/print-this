@@ -49,9 +49,9 @@ And--before you ask--yes, you should!
 (((version)))
 This book was generated
 
-* on `{build_date_time}`
-* from git commit `{build_git_commit}`
-* using `{build_os_release}`
+* on *{build_date_time}*
+* from git commit *{build_git_commit}*
+* using *{build_os_release}*
 
 == Asciidoc examples
 

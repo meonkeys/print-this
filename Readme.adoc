@@ -26,7 +26,7 @@ Here's a brief summary of the stuff we are aware of and working on.
 |ad02 |translate to any language besides English |OPEN |
 |ad03 |support Lulu |OPEN |
 |ad04 |support another printer/publisher besides Lulu |OPEN |
-|ad05 |document all attributes at top of `print-this.adoc` |OPEN |
+|ad05 |document all attributes at top of `print-this.adoc` |IN PROGRESS |
 |===
 
 We maintain our own issue list here so this repository is more useful on its own.
