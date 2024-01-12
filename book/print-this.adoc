@@ -279,9 +279,5 @@ bar::
 baz::
   Companion to bar.
 
-== End
-
-The End.
-
 [index]
 == Index
