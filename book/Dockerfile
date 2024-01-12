@@ -1,11 +1,5 @@
 FROM ruby:3.3
 
-# FIXME - what might I need bsdextrautils for?
-#RUN apt-get update \
-#  && apt-get --assume-yes --no-install-recommends install \
-#  bsdextrautils \
-#  && rm -rf /var/lib/apt/lists/*
-
 ARG USER
 ARG UID
 ARG GROUP
