@@ -6,6 +6,7 @@ Adam Monsen
 :toclevels: 3
 :pagenums:
 :sectnums:
+:imagesdir: img
 :icons: font
 :xrefstyle: full
 :hide-uri-scheme:
@@ -38,12 +39,14 @@ Built with Asciidoctor on Linux.
 
 Printing and binding by Ceres Lithographing, Inc., Ceres, Milky Way.
 
+[image=printer.png]
 == Introduction
 
 (((welcome)))
 Welcome to _Print This_!
 And--before you ask--yes, you should!
 
+[image=printer.png]
 == Version
 
 (((version)))
@@ -53,6 +56,7 @@ This book was generated
 * from git commit *{build_git_commit}*
 * using *{build_os_release}*
 
+[image=printer.png]
 == Asciidoc examples
 
 (((Asciidoc)))
@@ -194,6 +198,7 @@ Refer to <<Asciidoc examples>>.
 
 https://example.com[This text is hyperlinked].
 
+[image=printer.png]
 == Long chapter
 
 (((Asciidoc, prose)))
@@ -290,6 +295,7 @@ Felis eget nunc lobortis mattis aliquam faucibus purus in massa.
 Nullam eget felis eget nunc lobortis mattis aliquam faucibus.
 Nec sagittis aliquam malesuada bibendum arcu.
 
+[image=printer.png]
 == Glossary
 
 foo::
