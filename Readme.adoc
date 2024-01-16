@@ -27,6 +27,7 @@ Here's a brief summary of the stuff we are aware of and working on.
 |ad03 |support Lulu |OPEN |
 |ad04 |support another printer/publisher besides Lulu |OPEN |
 |ad05 |document all attributes at top of `print-this.adoc` |IN PROGRESS |
+|ad06 |emoji: no color, no genie |WON'T FIX |See detail below
 |===
 
 We maintain our own issue list here so this repository is more useful on its own.
@@ -54,6 +55,16 @@ Please leave cell widths as-is, optimizing for proper diffs in source control hi
 **** https://mifosforge.jira.com/wiki/spaces/MIFOS/pages/4456742/Commit+Log+Guide
 **** https://lore.kernel.org/git/7vr4waoics.fsf@alter.siamese.dyndns.org/
 **** https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+
+== ad06 detail
+
+Asciidoctor-PDF does not yet support color emoji, and the fallback font with _some_ emoji is not comprehensive.
+For what it's worth, I don't need nor want color emoji in this project, I'm just documenting why it currently works the way it does.
+
+See:
+
+* <https://docs.asciidoctor.org/pdf-converter/latest/theme/fallback-font/#requirements>
+* <https://github.com/asciidoctor/asciidoctor-pdf/issues/323>
 
 == Warranty
 
