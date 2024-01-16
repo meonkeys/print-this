@@ -116,18 +116,16 @@ Here's a table.
 (((Asciidoc, keyboard macro)))
 Increase zoom level with kbd:[Ctrl + +].
 
-=== Special characters
+Switch between windows with kbd:[Alt + Tab].
 
-Here's a tent: ⛺
+=== Specials and formatting
 
-Here's a bento box: 🍱
+Here are some special characters and formatting examples.
 
-Here's a foggy city: 🌁
-
-Here's a barber pole: 💈
+Emoji tent: ⛺, bento box: 🍱, foggy city: 🌁, barber pole: 💈.
 
 (((Asciidoc, smart quotes)))
-Here's some text with “smart quotes” and emoji in the middle of a long paragraph.
+Here's some text with “smart quotes” and emoji in the middle of a long paragraph, as well as some `monospace text`.
 Lorem ipsum dolor sit 👔 (necktie) 🧞 (genie) amet, consetetur sadipscing elitr, sed diam.
 Nonumy eirmod tempor invidunt ut labore et 💫 (dizzy) dolore magna aliquyam erat, sed diam voluptua.
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
