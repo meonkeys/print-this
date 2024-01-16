@@ -17,7 +17,7 @@ Adam Monsen
 // necessary for keyboard macro (kbd)
 :experimental:
 // optimize for printing
-:media: prepress
+:media: print
 
 // License for book text: CC0 1.0 (Creative Commons CC0 1.0 Universal)
 
