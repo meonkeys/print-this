@@ -13,7 +13,9 @@ class ExtendedPDFConverter < (Asciidoctor::Converter.for 'pdf')
 
   # see https://asciidoctor.zulipchat.com/#narrow/stream/288690-users.2Fasciidoctor-pdf/topic/syntax.20error.20with.20prepress.20PDF.20on.20Lulu
   def ink_running_content periphery, doc, skip = [1, 1], body_start_page_number = 1
-    num_pages = page_count
     super
+
+    # TODO loop over pages. If one is empty, add an invisible glyph (maybe just an ASCII 0x20 space character?)
+    num_pages = page_count
   end
 end
