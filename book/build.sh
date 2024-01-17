@@ -25,7 +25,8 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+WORK_DIR=/usr/src/app/book
 GID="$(id -g)"
 GROUP="$(id -gn)"
 BUILD_DATE_TIME="$(date)"
@@ -36,6 +37,7 @@ set -o xtrace
 
 sudo docker build \
     --tag print-this \
+    --build-arg WORK_DIR="$WORK_DIR" \
     --build-arg USER="$USER" \
     --build-arg UID="$UID" \
     --build-arg GROUP="$GROUP" \
@@ -47,7 +49,7 @@ sudo docker run \
     --interactive \
     --tty \
     --user "$USER:$GROUP" \
-    --volume "$DIR:/usr/src/app/book" \
+    --volume "$SCRIPT_DIR:$WORK_DIR" \
     --env BUILD_DATE_TIME="$BUILD_DATE_TIME" \
     --env BUILD_GIT_COMMIT="$BUILD_GIT_COMMIT" \
     --env BUILD_OS_RELEASE="$BUILD_OS_RELEASE" \
