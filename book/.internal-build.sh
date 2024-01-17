@@ -33,5 +33,3 @@ bundle exec asciidoctor-pdf \
     --trace \
     --require ./extensions.rb \
     print-this.adoc
-
-cp print-this.pdf /outputs

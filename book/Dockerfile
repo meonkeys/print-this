@@ -19,9 +19,6 @@ COPY Gemfile .
 
 RUN bundle install
 
-COPY .internal-build.sh print-this.adoc print-theme.yml extensions.rb .
-
-# absolute destination path required so dirs aren't flattened into $HOME
-COPY img/ $HOME/img
+WORKDIR /usr/src/app/book
 
 CMD ["/bin/bash", ".internal-build.sh"]

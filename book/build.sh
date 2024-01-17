@@ -25,6 +25,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 GID="$(id -g)"
 GROUP="$(id -gn)"
 BUILD_DATE_TIME="$(date)"
@@ -41,14 +42,12 @@ sudo docker build \
     --build-arg GID="$GID" \
     .
 
-mkdir -p ~/Downloads/print-this
-
 sudo docker run \
     --rm \
     --interactive \
     --tty \
     --user "$USER:$GROUP" \
-    --volume "$HOME/Downloads/print-this:/outputs" \
+    --volume "$DIR:/usr/src/app/book" \
     --env BUILD_DATE_TIME="$BUILD_DATE_TIME" \
     --env BUILD_GIT_COMMIT="$BUILD_GIT_COMMIT" \
     --env BUILD_OS_RELEASE="$BUILD_OS_RELEASE" \

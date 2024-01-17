@@ -17,6 +17,8 @@ cd book
 ./build.sh
 ----
 
+If that worked, examine `book/print-this.pdf`.
+
 == Testing
 
 The build script above also serves as an automated acceptance test.
