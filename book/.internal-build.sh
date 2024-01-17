@@ -23,6 +23,7 @@
 set -o errexit
 set -o nounset
 set -o pipefail
+set -o xtrace
 
 bundle exec asciidoctor-pdf --attribute build_date_time="$BUILD_DATE_TIME" --attribute build_git_commit="$BUILD_GIT_COMMIT" --attribute build_os_release="$BUILD_OS_RELEASE" --warnings --trace --require ./extensions.rb print-this.adoc
 
