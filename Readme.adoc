@@ -77,6 +77,21 @@ See:
 * <https://docs.asciidoctor.org/pdf-converter/latest/theme/fallback-font/#requirements>
 * <https://github.com/asciidoctor/asciidoctor-pdf/issues/323>
 
+== Printer-specific notes
+
+=== Lulu
+
+Lulu accepts the output PDF for printing but shows these warnings:
+
+[WARNING]
+====
+Images: Your file contains images with resolution less than 200 pixels per inch. Lulu suggests using images with a pixel per inch range of 200-600 for the best results. https://help.lulu.com/en/support/solutions/articles/64000255582[Learn about image print quality.]
+
+Transparency: We detected an element that may be transparent within your file. We strongly recommend flattening or removing any transparencies in your file. https://help.lulu.com/en/support/solutions/articles/64000255519[Review print guidelines.]
+
+Full Bleed: Please note that a white Bleed margin has been added to your file. The book preview will show how this Bleed margin impacts your file. If you require image content that extends to the trimmed edge of the page, please upload a PDF prepared for Full Bleed. https://help.lulu.com/en/support/solutions/articles/64000255584[Learn about full bleed.]
+====
+
 == Warranty
 
 None.
