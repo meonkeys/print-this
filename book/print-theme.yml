@@ -3,6 +3,13 @@
 extends: default-for-print-with-font-fallbacks
 page:
   size: A5
+footer:
+  verso:
+    center:
+      content: '{document-title}'
+  recto:
+    center:
+      content: '{chapter-title}'
 codespan:
   font-color: #c70d0d
 link:
