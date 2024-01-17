@@ -11,11 +11,18 @@ class ExtendedPDFConverter < (Asciidoctor::Converter.for 'pdf')
     super
   end
 
+  # Loop over all pages. Add something to empty pages, e.g. an invisible glyph
+  # (maybe just an ASCII 0x20 space character?).
   # see https://asciidoctor.zulipchat.com/#narrow/stream/288690-users.2Fasciidoctor-pdf/topic/syntax.20error.20with.20prepress.20PDF.20on.20Lulu
   def ink_running_content periphery, doc, skip = [1, 1], body_start_page_number = 1
     super
 
-    # TODO loop over pages. If one is empty, add an invisible glyph (maybe just an ASCII 0x20 space character?)
-    num_pages = page_count
+    (1..page_count).each do |pgnum|
+      go_to_page pgnum
+      if page.empty?
+        # FIXME - add something we can see, for now
+        text 'xyz'
+      end
+    end
   end
 end
