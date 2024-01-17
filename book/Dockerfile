@@ -5,7 +5,7 @@ ARG UID
 ARG GROUP
 ARG GID
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/book
 
 RUN addgroup --gid $GID $USER \
   && useradd --uid $UID --gid $GID --shell /bin/bash --no-create-home $USER \
@@ -13,12 +13,10 @@ RUN addgroup --gid $GID $USER \
 
 USER "$USER:$GROUP"
 
-ENV HOME=/usr/src/app
+ENV HOME=$WORKDIR
 
 COPY Gemfile .
 
 RUN bundle install
-
-WORKDIR /usr/src/app/book
 
 CMD ["/bin/bash", ".internal-build.sh"]
