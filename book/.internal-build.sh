@@ -23,8 +23,11 @@
 set -o errexit
 set -o nounset
 set -o pipefail
-set -o xtrace
 
+echo '🖨️	typeset print-ready PDF'
+title=print-this
+input=$title.adoc
+output=$title.pdf
 asciidoctor-pdf \
     --attribute build_date_time="$BUILD_DATE_TIME" \
     --attribute build_git_commit="$BUILD_GIT_COMMIT" \
@@ -32,4 +35,6 @@ asciidoctor-pdf \
     --warnings \
     --trace \
     --require ./extensions.rb \
-    print-this.adoc
+    --out-file $output \
+    $input
+echo "💾	wrote $output"

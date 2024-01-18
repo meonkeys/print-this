@@ -25,6 +25,9 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+SECONDS=0
+echo "🏗️	start at $(date)"
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 WORK_DIR=/usr/src/app/book
 GID="$(id -g)"
@@ -33,8 +36,8 @@ BUILD_DATE_TIME="$(date)"
 BUILD_GIT_COMMIT="$(git rev-parse --short HEAD || echo FIXME)"
 BUILD_OS_RELEASE="$(lsb_release --short --description || echo FIXME)"
 
-set -o xtrace
-
+echo '🚢	build image'
+# discard container checksum
 sudo docker build \
     --tag print-this \
     --build-arg WORK_DIR="$WORK_DIR" \
@@ -42,8 +45,11 @@ sudo docker build \
     --build-arg UID="$UID" \
     --build-arg GROUP="$GROUP" \
     --build-arg GID="$GID" \
-    .
+    --quiet \
+    . \
+    > /dev/null
 
+echo '🚢	start container'
 sudo docker run \
     --rm \
     --interactive \
@@ -54,3 +60,5 @@ sudo docker run \
     --env BUILD_GIT_COMMIT="$BUILD_GIT_COMMIT" \
     --env BUILD_OS_RELEASE="$BUILD_OS_RELEASE" \
     print-this
+
+echo "🏗️	done (${SECONDS}s elapsed)"
