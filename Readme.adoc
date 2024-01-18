@@ -1,9 +1,10 @@
-= Print This
+= 🖨️ Print This
 
-Generate a book with Asciidoctor.
+Generate a book with https://docs.asciidoctor.org/pdf-converter/latest/[Asciidoctor-PDF].
 
-Typesetting for print-on-demand printing is complex!
-Use this as a starting point for your own print book.
+Typesetting for print-on-demand printing is complex.
+This helps.
+Use this code as a starting point for your own print book.
 
 The output is a PDF ready to print with Lulu.
 Lulu is currently the only supported printer.
