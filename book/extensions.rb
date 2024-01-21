@@ -3,11 +3,9 @@ class ExtendedPDFConverter < (Asciidoctor::Converter.for 'pdf')
 
   # see https://docs.asciidoctor.org/pdf-converter/latest/extend/use-cases/#chapter-image
   def ink_chapter_title sect, title, opts
-    if (image_path = sect.attr 'image')
-      image_attrs = { 'target' => image_path, 'pdfwidth' => '1in' }
-      image_block = ::Asciidoctor::Block.new sect.document, :image, content_model: :empty, attributes: image_attrs
-      convert_image image_block, relative_to_imagesdir: true, pinned: true
-    end
+    image_attrs = { 'target' => 'printer.png', 'pdfwidth' => '1in' }
+    image_block = ::Asciidoctor::Block.new sect.document, :image, content_model: :empty, attributes: image_attrs
+    convert_image image_block, relative_to_imagesdir: true, pinned: true
     super
   end
 
