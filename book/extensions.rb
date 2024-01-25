@@ -9,11 +9,21 @@ class ExtendedPDFConverter < (Asciidoctor::Converter.for 'pdf')
     convert_image image_block, relative_to_imagesdir: true, pinned: true
     super
   end
-
-  # Wrap at slashes. Improves word-wrapping for long file paths.
-  # See https://asciidoctor.zulipchat.com/#narrow/stream/288690-users.2Fasciidoctor-pdf/topic/.E2.9C.94.20wrapping.20long.20words.3A.20break.20at.20slash/near/418152314
-  def typeset_text string, line_metrics, opts = {}
-    string = string.gsub %r|(?<=\w)\/|, '/' + ZeroWidthSpace
-    super
-  end
 end
+
+# Allow long words to wrap at slashes.
+#
+# See: https://asciidoctor.zulipchat.com/#narrow/stream/288690-users.2Fasciidoctor-pdf/topic/.E2.9C.94.20wrapping.20long.20words.3A.20break.20at.20slash
+Prawn::Text::Formatted::LineWrap.prepend (Module.new do
+  def break_chars(*)
+    '/' + super
+  end
+
+  def word_division_scan_pattern(*)
+    Regexp.union super, /\//
+  end
+
+  def scan_pattern(*)
+    Regexp.union super, /\//
+  end
+end)
