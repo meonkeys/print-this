@@ -4,7 +4,7 @@
 :license: CC0 1.0 (Creative Commons CC0 1.0 Universal)
 :doctype: book
 :docinfo:
-:toc:
+:toc: macro
 :toclevels: 3
 :keywords: writing, asciidoctor, book, print
 // doesn't appear to be used in PDF output.
@@ -43,6 +43,8 @@ This ((book)) is designed by {author} and typeset with Asciidoctor-PDF.
 ((Fonts)) are Asciidoctor-PDF defaults including NotoSerif and NotoEmoji.
 
 ((License)): {license}
+
+toc::[]
 
 == Introduction
 
