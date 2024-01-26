@@ -1,9 +1,14 @@
 = Print This: Asciidoctor Quick Start
-Adam Monsen
+:author: Adam Monsen
+:copyright: (C)2024 {author}
+:license: CC0 1.0 (Creative Commons CC0 1.0 Universal)
 :doctype: book
 :docinfo:
 :toc:
 :toclevels: 3
+:keywords: writing, asciidoctor, book, print
+// doesn't appear to be used in PDF output.
+:description: Free and Open Source printed book template using Asciidoctor-PDF.
 :revnumber: {build_git_commit}
 :revdate: {build_date_time}
 :revremark: {build_locale_lang}
@@ -23,24 +28,21 @@ Adam Monsen
 // optimize for printing
 :media: prepress
 
-// License for book text: CC0 1.0 (Creative Commons CC0 1.0 Universal)
-
 [colophon%notitle]
 == Colophon
 
-The Print This Press, Ceres and Seattle.
+_{doctitle}_
 
-(C)2049 by The Print This Press
+First published in 2024 by Sunrise Data Press (https://sunrisedata.io).
 
-Published in the Milky Way Galaxy.
+Seattle, Washington, USA.
 
-This book is designed by Dagger Flush, Denver, Colorado.
-The types are handset Volcano Dust and Papaya, designed by Leeloo.
-Leeloo created the typefaces to soften the bluntness of documentation.
+{copyright}
 
-Built with Asciidoctor on Linux.
+This book is designed by {author} and typeset with Asciidoctor-PDF.
+Fonts are Asciidoctor-PDF defaults including NotoSerif and NotoEmoji.
 
-Printing and binding by Ceres Lithographing, Inc., Ceres, Milky Way.
+License: {license}
 
 == Introduction
 
@@ -55,7 +57,7 @@ This book was generated
 
 * on *{build_date_time}*
 * with `LANG=*{build_locale_lang}*`
-* from git commit *{build_git_commit}*
+* from `{docname}{docfilesuffix}` at commit *{build_git_commit}*
 * using *{build_os_release}*
 
 == Asciidoc examples
