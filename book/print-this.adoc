@@ -22,7 +22,7 @@ Adam Monsen
 
 // License for book text: CC0 1.0 (Creative Commons CC0 1.0 Universal)
 
-[colophon]
+[colophon%notitle]
 == Colophon
 
 The Print This Press, Ceres and Seattle.
