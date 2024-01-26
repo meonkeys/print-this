@@ -12,7 +12,6 @@
 :revnumber: {build_git_commit}
 :revdate: {build_date_time}
 :revremark: {build_locale_lang}
-:pagenums:
 :sectnums:
 :imagesdir: img
 :icons: font
