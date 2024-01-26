@@ -101,7 +101,7 @@ None.
 
 == Copyright and license
 
-(C)2023 Adam Monsen and all Print This authors mentioned in source control history.
+(C)2023-2024 Adam Monsen.
 
 The license for all original source code related to this book is the GNU AGPL (Affero General Public License) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
