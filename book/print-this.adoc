@@ -28,7 +28,7 @@
 // optimize for printing
 :media: prepress
 
-[colophon%notitle]
+[colophon%notitle%nonfacing]
 == Colophon
 
 _{doctitle}_
