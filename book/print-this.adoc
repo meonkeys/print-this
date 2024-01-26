@@ -22,8 +22,6 @@ Adam Monsen
 :experimental:
 // optimize for printing
 :media: prepress
-// Optimize the PDF with ghostscript
-:optimize: prepress
 
 // License for book text: CC0 1.0 (Creative Commons CC0 1.0 Universal)
 

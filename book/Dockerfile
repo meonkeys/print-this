@@ -1,10 +1,5 @@
 FROM ruby:3.3
 
-RUN apt-get update \
-  && apt-get --assume-yes --no-install-recommends install \
-  ghostscript \
-  && rm -rf /var/lib/apt/lists/*
-
 ARG WORK_DIR
 ARG USER
 ARG UID
