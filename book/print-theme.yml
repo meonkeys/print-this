@@ -2,7 +2,7 @@
 # "-with-font-fallbacks" here
 extends: default-for-print-with-font-fallbacks
 page:
-  size: A5
+  size: [6in, 9in]
 footer:
   verso:
     center:
