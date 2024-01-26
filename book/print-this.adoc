@@ -51,6 +51,7 @@ And--before you ask--yes, you should!
 This book was generated
 
 * on *{build_date_time}*
+* with `LANG=*{build_locale_lang}*`
 * from git commit *{build_git_commit}*
 * using *{build_os_release}*
 

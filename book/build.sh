@@ -33,6 +33,7 @@ WORK_DIR=/usr/src/app/book
 GID="$(id -g)"
 GROUP="$(id -gn)"
 BUILD_DATE_TIME="$(date)"
+BUILD_LOCALE_LANG="${LANG:-en_US.UTF-8}"
 BUILD_GIT_COMMIT="$(git rev-parse --short HEAD || echo FIXME)"
 BUILD_OS_RELEASE="$(lsb_release --short --description || echo FIXME)"
 
@@ -57,6 +58,7 @@ sudo docker run \
     --user "$USER:$GROUP" \
     --volume "$SCRIPT_DIR:$WORK_DIR" \
     --env BUILD_DATE_TIME="$BUILD_DATE_TIME" \
+    --env BUILD_LOCALE_LANG="$BUILD_LOCALE_LANG" \
     --env BUILD_GIT_COMMIT="$BUILD_GIT_COMMIT" \
     --env BUILD_OS_RELEASE="$BUILD_OS_RELEASE" \
     print-this

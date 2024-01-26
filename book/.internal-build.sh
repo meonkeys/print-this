@@ -30,6 +30,7 @@ input=$title.adoc
 output=$title.pdf
 asciidoctor-pdf \
     --attribute build_date_time="$BUILD_DATE_TIME" \
+    --attribute build_locale_lang="$BUILD_LOCALE_LANG" \
     --attribute build_git_commit="$BUILD_GIT_COMMIT" \
     --attribute build_os_release="$BUILD_OS_RELEASE" \
     --warnings \
