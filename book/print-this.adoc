@@ -27,6 +27,8 @@
 // optimize for printing
 :media: prepress
 
+((a test index entry)) ((b test index entry)) ((c test index entry))
+
 [colophon%notitle%nonfacing]
 == Colophon
 
@@ -35,6 +37,8 @@ _{doctitle}_
 First ((published)) in 2024 by ((Sunrise Data Press)) (https://sunrisedata.io).
 
 Seattle, Washington, USA.
+
+((a test index entry)) ((b test index entry)) ((c test index entry))
 
 {copyright}
 
@@ -51,6 +55,8 @@ toc::[]
 Welcome to _Print This_!
 And--before you ask--yes, you should!
 
+((a test index entry)) ((b test index entry)) ((c test index entry))
+
 == Version
 
 (((version)))
@@ -66,6 +72,8 @@ This book was generated
 (((Asciidoc)))
 Find more at https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/.
 
+((a test index entry)) ((b test index entry)) ((c test index entry))
+
 === Some prose
 
 (((Asciidoc, prose)))
@@ -80,6 +88,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 At vero eos et accusam et justo ((duo dolores)) et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 That's the last of it.
 But there might be some more later.
+
+((a test index entry)) ((b test index entry)) ((c test index entry))
 
 Note how we use ((one sentence per line)).
 Read more about this at https://asciidoctor.org/docs/asciidoc-recommended-practices/.
@@ -104,6 +114,8 @@ Here's a numbered list.
 . bar
 . baz
 
+((a test index entry)) ((b test index entry)) ((c test index entry))
+
 === A table
 
 (((Asciidoc, table)))
@@ -119,6 +131,8 @@ Here's a table.
 |===
 
 === Keyboard keys
+
+((a test index entry)) ((b test index entry)) ((c test index entry))
 
 (((Asciidoc, keyboard macro)))
 Increase ((zoom)) level with kbd:[Ctrl + +].
@@ -146,6 +160,8 @@ Here's a thematic break:
 
 '''
 
+((a test index entry)) ((b test index entry)) ((c test index entry))
+
 (((Zpseudo, index entry)))
 Here's some more filler text for no reason.
 At vero eos et accusam et justo duo dolores et ea rebum.
@@ -154,6 +170,8 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 === Source code
 
 ==== YAML
+
+((a test index entry)) ((b test index entry)) ((c test index entry))
 
 (((Asciidoc, source code block)))
 (((yaml)))
@@ -182,6 +200,8 @@ services:
 
 === A quote
 
+((a test index entry)) ((b test index entry)) ((c test index entry))
+
 ____
 The future is already here--it's just not evenly distributed.
 ____
@@ -199,6 +219,8 @@ IMPORTANT: Don't forget...
 WARNING: Watch out for...
 
 CAUTION: Ensure that...
+
+((a test index entry)) ((b test index entry)) ((c test index entry))
 
 === References
 
@@ -222,6 +244,8 @@ Word counts per paragraph:
 |3 |139
 |4 |141
 |===
+
+((a test index entry)) ((b test index entry)) ((c test index entry))
 
 1.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -259,6 +283,8 @@ Odio morbi quis commodo odio aenean sed adipiscing diam donec.
 Urna nec tincidunt praesent semper.
 Ultrices tincidunt arcu non sodales neque sodales.
 Sit amet commodo nulla facilisi nullam vehicula ipsum.
+
+((a test index entry)) ((b test index entry)) ((c test index entry))
 
 3.
 Tempus quam pellentesque nec nam.
@@ -301,6 +327,8 @@ Pellentesque habitant morbi tristique senectus et.
 Felis eget nunc lobortis mattis aliquam faucibus purus in massa.
 Nullam eget felis eget nunc lobortis mattis aliquam faucibus.
 Nec sagittis aliquam malesuada bibendum arcu.
+
+((a test index entry)) ((b test index entry)) ((c test index entry))
 
 == Glossary
 

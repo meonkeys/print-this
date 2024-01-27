@@ -35,7 +35,6 @@ asciidoctor-pdf \
     --attribute build_os_release="$BUILD_OS_RELEASE" \
     --warnings \
     --trace \
-    --require ./extensions.rb \
     --out-file $output \
     $input
 echo "💾	wrote $output"
