@@ -32,16 +32,16 @@
 
 _{doctitle}_
 
-First ((published)) in 2024 by ((Sunrise Data Press)) (https://sunrisedata.io).
+First published in 2024 by Sunrise Data Press (https://sunrisedata.io).
 
 Seattle, Washington, USA.
 
 {copyright}
 
-This ((book)) is designed by {author} and typeset with Asciidoctor-PDF.
-((Fonts)) are Asciidoctor-PDF defaults including NotoSerif and NotoEmoji.
+This book is designed by {author} and typeset with Asciidoctor-PDF.
+Fonts are Asciidoctor-PDF defaults including NotoSerif and NotoEmoji.
 
-((License)): {license}
+License: {license}
 
 toc::[]
 
@@ -69,19 +69,20 @@ Find more at https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference
 === Some prose
 
 (((Asciidoc, prose)))
-Here's some ((prose)).
+Here's some prose.
 
 Now hear this.
-Let the ((lorem ipsum)) begin.
-Lorem ipsum dolor sit amet, ((consetetur)) sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+(((lorem ipsum)))
+Let the lorem ipsum begin.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo ((duo dolores)) et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 That's the last of it.
 But there might be some more later.
 
-Note how we use ((one sentence per line)).
+Note how we use one sentence per line.
 Read more about this at https://asciidoctor.org/docs/asciidoc-recommended-practices/.
 
 === Bullet list
@@ -121,20 +122,20 @@ Here's a table.
 === Keyboard keys
 
 (((Asciidoc, keyboard macro)))
-Increase ((zoom)) level with kbd:[Ctrl + +].
+Increase zoom level with kbd:[Ctrl + +].
 
-Switch between ((windows)) with kbd:[Alt + Tab].
+Switch between windows with kbd:[Alt + Tab].
 
 === Specials and formatting
 
-Here are some special characters and formatting ((examples)).
+Here are some special characters and formatting examples.
 
 Emoji tent: ⛺, bento box: 🍱, foggy city: 🌁, barber pole: 💈.
 
 (((Asciidoc, smart quotes)))
-Here's some ((text)) with “smart ((quotes))” and emoji in the middle of a long paragraph, as well as some `monospace text`.
-Lorem ipsum dolor sit 👔 (necktie) 🧞 (genie) amet, ((consetetur)) sadipscing elitr, sed diam.
-Nonumy ((eirmod)) tempor invidunt ut labore et 💫 (dizzy) dolore magna aliquyam erat, sed diam voluptua.
+Here's some text with “smart quotes” and emoji in the middle of a long paragraph, as well as some `monospace text`.
+Lorem ipsum dolor sit 👔 (necktie) 🧞 (genie) amet, consetetur sadipscing elitr, sed diam.
+Nonumy eirmod tempor invidunt ut labore et 💫 (dizzy) dolore magna aliquyam erat, sed diam voluptua.
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
@@ -146,7 +147,6 @@ Here's a thematic break:
 
 '''
 
-(((Zpseudo, index entry)))
 Here's some more filler text for no reason.
 At vero eos et accusam et justo duo dolores et ea rebum.
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
