@@ -1,8 +1,14 @@
 # smart quotes (and many other special characters) require
 # "-with-font-fallbacks" here
 extends: default-for-print-with-font-fallbacks
+# when to start rendering footer
+running-content:
+  start-at: after-toc
 page:
   size: [6in, 9in]
+  # when to switch from Roman (i, ii, iii) to Arabic (1, 2, 3) page numbers
+  numbering:
+    start-at: after-toc
 footer:
   verso:
     center:
