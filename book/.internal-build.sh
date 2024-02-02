@@ -28,8 +28,7 @@ echo '🖨️	typeset print-ready PDF'
 title=print-this
 input=$title.adoc
 output=$title.pdf
-bundle install
-bundle exec asciidoctor-pdf \
+asciidoctor-pdf \
     --attribute build_date_time="$BUILD_DATE_TIME" \
     --attribute build_locale_lang="$BUILD_LOCALE_LANG" \
     --attribute build_git_commit="$BUILD_GIT_COMMIT" \
