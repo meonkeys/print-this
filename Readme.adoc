@@ -1,6 +1,6 @@
 = 🖨️ Print This
 
-Generate a book with https://docs.asciidoctor.org/pdf-converter/latest/[Asciidoctor-PDF].
+Generate a book with https://docs.asciidoctor.org/pdf-converter/latest/[Asciidoctor PDF].
 
 Typesetting for print-on-demand printing is complex.
 This helps.
