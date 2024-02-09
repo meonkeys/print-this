@@ -61,14 +61,14 @@ This book was generated
 * from `{docname}{docfilesuffix}` at commit *{build_git_commit}*
 * using *{build_os_release}*
 
-== Asciidoc examples
+== AsciiDoc examples
 
-(((Asciidoc)))
+(((AsciiDoc)))
 Find more at https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/.
 
 === Some prose
 
-(((Asciidoc, prose)))
+(((AsciiDoc, prose)))
 Here's some prose.
 
 Now hear this.
@@ -87,7 +87,7 @@ Read more about this at https://asciidoctor.org/docs/asciidoc-recommended-practi
 
 === Bullet list
 
-(((Asciidoc, bullet list)))
+(((AsciiDoc, bullet list)))
 Here's a bullet list.
 
 * foo
@@ -97,7 +97,7 @@ Here's a bullet list.
 
 === Numbered list
 
-(((Asciidoc, numbered list)))
+(((AsciiDoc, numbered list)))
 Here's a numbered list.
 
 . foo
@@ -107,7 +107,7 @@ Here's a numbered list.
 
 === A table
 
-(((Asciidoc, table)))
+(((AsciiDoc, table)))
 Here's a table.
 
 |===
@@ -121,7 +121,7 @@ Here's a table.
 
 === Keyboard keys
 
-(((Asciidoc, keyboard macro)))
+(((AsciiDoc, keyboard macro)))
 Increase zoom level with kbd:[Ctrl + +].
 
 Switch between windows with kbd:[Alt + Tab].
@@ -132,7 +132,7 @@ Here are some special characters and formatting examples.
 
 Emoji tent: ⛺, bento box: 🍱, foggy city: 🌁, barber pole: 💈.
 
-(((Asciidoc, smart quotes)))
+(((AsciiDoc, smart quotes)))
 Here's some text with “smart quotes” and emoji in the middle of a long paragraph, as well as some `monospace text`.
 Lorem ipsum dolor sit 👔 (necktie) 🧞 (genie) amet, consetetur sadipscing elitr, sed diam.
 Nonumy eirmod tempor invidunt ut labore et 💫 (dizzy) dolore magna aliquyam erat, sed diam voluptua.
@@ -155,7 +155,7 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 
 ==== YAML
 
-(((Asciidoc, source code block)))
+(((AsciiDoc, source code block)))
 (((yaml)))
 Here is some annotated YAML source code.
 
@@ -202,13 +202,13 @@ CAUTION: Ensure that...
 
 === References
 
-Refer to <<Asciidoc examples>>.
+Refer to <<AsciiDoc examples>>.
 
 https://example.com[This text is hyperlinked].
 
 == Long chapter
 
-(((Asciidoc, prose)))
+(((AsciiDoc, prose)))
 Here's a chapter with a lot of text.
 This may be useful for counting full pages of prose.
 I counted each using `wc`, excluding the paragraph number at the beginning of each.
