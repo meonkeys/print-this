@@ -39,7 +39,7 @@ Here's a brief summary of the stuff we are aware of and working on.
 
 |ad02 |translate to any language besides English |OPEN |
 |ad04 |support another printer/publisher besides Lulu |OPEN |
-|ad05 |document all attributes at top of `print-this.adoc` |IN PROGRESS |
+|ad05 |document all attributes at top of `print-this.adoc` |OPEN |
 |ad06 |emoji: no color, no genie |WON'T FIX |See detail below
 |===
 
