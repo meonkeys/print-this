@@ -63,7 +63,7 @@ Don't change spacing in the source, it is natural/uneven on purpose to optimize 
 *** ensure build passes
 ** commit log messages
 *** the first line of a commit log message is very important: say precisely *what* change you made, save the *why* for the rest
-*** use infinitive verb forms, e.g. "add -q quiet option"
+*** use infinitive verb forms, e.g. "add -q quiet option"
 *** don't wrap body text
 *** see also:
 **** https://mifosforge.jira.com/wiki/spaces/MIFOS/pages/4456742/Commit+Log+Guide
