@@ -8,7 +8,7 @@ Use this code as a starting point for your own print book.
 
 The output is a PDF ready to print with Lulu.
 Lulu is currently the only supported printer.
-Patches welcome to resolve issue ad04 below.
+<<Patches welcome>> to resolve <<Issues,issue ad04>>.
 
 == Usage
 
@@ -94,6 +94,16 @@ Transparency: We detected an element that may be transparent within your file. W
 
 Full Bleed: Please note that a white Bleed margin has been added to your file. The book preview will show how this Bleed margin impacts your file. If you require image content that extends to the trimmed edge of the page, please upload a PDF prepared for Full Bleed. https://help.lulu.com/en/support/solutions/articles/64000255584[Learn about full bleed.]
 ====
+
+== Patches welcome
+
+Your contributions are most welcome!
+When submitting a patch, please:
+
+. Heed the <<Conventions>>.
+. Sign off every commit (`git commit --signoff`).
+Sorry, I know this is annoying, but it is important.
+It certifies you wrote or otherwise have the right to submit the patch, following https://developercertificate.org[Developer Certificate of Origin, version 1.1].
 
 == Warranty
 
