@@ -31,16 +31,21 @@
 == Colophon
 
 _{doctitle}_
-
+ +
+ +
 First published in 2024 by Sunrise Data Press (https://sunrisedata.io).
-
+ +
+ +
 Seattle, Washington, USA.
-
+ +
+ +
 {copyright}
-
+ +
+ +
 This book is designed by {author} and typeset with Asciidoctor-PDF.
 Fonts are Asciidoctor-PDF defaults including NotoSerif and NotoEmoji.
-
+ +
+ +
 License: {license}
 
 toc::[]
@@ -202,9 +207,8 @@ CAUTION: Ensure that...
 
 === References
 
-Refer to <<AsciiDoc examples>>.
-
-https://example.com[This text is hyperlinked].
+* Refer to <<AsciiDoc examples>>.
+* https://example.com[This text is hyperlinked].
 
 == Long chapter
 

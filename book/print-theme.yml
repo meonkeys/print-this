@@ -20,3 +20,8 @@ codespan:
   font-color: #c70d0d
 link:
   font-color: #0b04d5
+prose:
+  margin-bottom: 6
+  margin-inner: 0
+  text-indent: 0
+  text-indent-inner: 18
