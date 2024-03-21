@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'asciidoctor-pdf', '2.3.12'
+gem 'asciidoctor-pdf', '2.3.15'
 gem 'pygments.rb', '2.4.1'
