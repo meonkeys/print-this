@@ -38,6 +38,7 @@ BUILD_GIT_COMMIT="$(git rev-parse --short HEAD || echo FIXME)"
 BUILD_OS_RELEASE="$(lsb_release --short --description || echo FIXME)"
 
 echo '🚢	build image'
+cd "$SCRIPT_DIR"
 # discard container checksum
 sudo docker build \
     --tag print-this \
