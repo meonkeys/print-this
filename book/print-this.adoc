@@ -306,20 +306,6 @@ Felis eget nunc lobortis mattis aliquam faucibus purus in massa.
 Nullam eget felis eget nunc lobortis mattis aliquam faucibus.
 Nec sagittis aliquam malesuada bibendum arcu.
 
-== Hypenation test
-
-// from "Wild Animals of the Rockies" by James P. Gilligan
-// https://www.gutenberg.org/ebooks/59885
-
-The establishment of man in the main mountain valleys leading to the foothills was particularly important to the past and even present welfare of the rugged mountain sheep, one of the finest of all wild animals in the mountains.
-Wild sheep in early days always migrated through these valleys in the winter to the foothills (5,000 to 6,000 feet), where they were able to obtain bone-building minerals available in the sedimentary rocks.
-These minerals were not available in the high mountain granitic rocks and present evidence indicates that they are highly essential for successful and sturdy lamb crops.
-Man's dwellings created an effective barrier to these animals and no longer did they make their way to the foothills each winter.
-This situation probably weakened the breeding stock.
-In addition, there were other declining factors such as hunting and in particular, the grazing of domestic sheep on former wild sheep ranges.
-This not only reduced available forage for wild sheep, but also introduced certain diseases of domestic sheep into the flocks.
-Sheep scabies reached epidemic proportions in the late 1800's, wiping out hundreds of wild bighorn.
-
 == Glossary
 
 foo::
