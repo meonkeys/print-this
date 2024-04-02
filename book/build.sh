@@ -29,6 +29,7 @@ SECONDS=0
 echo "🏗️	start at $(date)"
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+IMAGE_NAME=print-this
 WORK_DIR=/usr/src/app/book
 GID="$(id -g)"
 GROUP="$(id -gn)"
@@ -41,7 +42,7 @@ echo '🚢	build image'
 cd "$SCRIPT_DIR"
 # discard container checksum
 sudo docker build \
-    --tag print-this \
+    --tag $IMAGE_NAME \
     --build-arg WORK_DIR="$WORK_DIR" \
     --build-arg USER="$USER" \
     --build-arg UID="$UID" \
@@ -62,6 +63,6 @@ sudo docker run \
     --env BUILD_LOCALE_LANG="$BUILD_LOCALE_LANG" \
     --env BUILD_GIT_COMMIT="$BUILD_GIT_COMMIT" \
     --env BUILD_OS_RELEASE="$BUILD_OS_RELEASE" \
-    print-this
+    $IMAGE_NAME
 
 echo "🏗️	done (${SECONDS}s elapsed)"
