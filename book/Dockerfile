@@ -19,4 +19,10 @@ COPY Gemfile .
 
 RUN bundle install
 
+USER root:root
+
+COPY ./text_transformer.rb /usr/local/bundle/gems/asciidoctor-pdf-2.3.15/lib/asciidoctor/pdf/text_transformer.rb
+
+USER "$USER:$GROUP"
+
 CMD ["/bin/bash", ".internal-build.sh"]

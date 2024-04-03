@@ -1,6 +1,8 @@
 # smart quotes (and many other special characters) require
 # "-with-font-fallbacks" here
 extends: default-for-print-with-font-fallbacks
+base:
+  hyphens: true
 # when to start rendering footer
 running-content:
   start-at: 2
